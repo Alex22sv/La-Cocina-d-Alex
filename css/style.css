@@ -978,24 +978,24 @@ body {
 	 text-shadow: 0px 0px 1px #000;
 	  background:#292929;
 }
-.popular-products li:first-child{
+.recetasRecientes li:first-child{
 	margin-top:0;
 }
-.popular-products li{
+.recetasRecientes li{
   background:#FFF;
   text-align:center;
   padding:4%;
   margin-top:10px;
 }
-.popular-products li > h4 > a{
+.recetasRecientes li > h4 > a{
 	color: #e44f2b;
 	font-size: 14px;
 	padding-bottom: 5px;
 }
-.popular-products li .price-number{
+.recetasRecientes li .price-number{
 	margin:5px 0;
 }
-.popular-products li .price-number p span.line-through{
+.recetasRecientes li .price-number p span.line-through{
 	text-decoration:line-through;
 	color:#e44f2b;
 }

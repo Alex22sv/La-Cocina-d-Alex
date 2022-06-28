@@ -28,9 +28,14 @@ nav.vertical ul li{	display:block;}/* vertical menu */
 nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
 img{max-width:100%;}
 /*end reset*/
+/* Fonts */
+@font-face {
+	font-family: 'Best Valentina';
+	src: url('../fonts/BestValentina.otf');
+}
 @font-face {
     font-family: 'Ubuntu Condensed', sans-serif;
-    src:url(../font/Amble-Regular-webfont.ttf) format('truetype');
+    src:url('../font/Amble-Regular-webfont.ttf') format('truetype');
 }
 body {
 	font-family: 'Ubuntu Condensed', sans-serif;
@@ -55,6 +60,7 @@ body {
 .logo {
 	float: left;
 	font-size: 60px;
+	font-family: 'Best Valentina';
 }
 .logo a {
 	color: white;
@@ -1575,4 +1581,84 @@ td, th {
 	width: 50%;
 	border: 1px solid black;
 	padding: 5px 10px;
+}
+
+/* Categorías */
+.categorias {
+    list-style: none;
+     *zoom: 1;
+     background:#e44f2b;
+     border-bottom:1px solid #DB3C15;
+}
+.categorias:before,
+.categorias:after {
+    content: " ";
+    display: table;
+}
+.categorias:after {
+    clear: both;
+}
+.categorias ul {
+    list-style: none;
+    width:11em;
+}
+.categorias a {
+    padding:16px 33px;
+    color:#fce2db;
+    border-top:1px solid #DB3C15;
+    -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.categorias a:hover {
+	color:#fda7a7;
+}
+.categorias li {
+    position: relative;
+}
+.categorias > li {
+    float: left;
+}
+.categorias > li:first-child,.categorias > li:last-child {
+	background-image:none;
+}
+.categorias > li {
+    background-image: url("../images/line-divider.png");
+    background-repeat: no-repeat;
+    background-position:left;
+}
+.categorias > li > a {
+    display: block;
+}
+.categorias li  ul {
+    position: absolute;
+    left: -9999px;
+}
+.categorias > li.hover > ul {
+    left: 0;
+}
+.categorias li li.hover ul {
+    left: 100%;
+    top: 0;
+}
+.categorias li li a {
+    display: block;
+    background:#EA5E3C;
+    position: relative;
+    z-index:100;
+    border-top:1px solid #EF7A5D;
+    padding:10px;
+    font-size:15px;
+}
+.categorias li li a:hover {
+	  background:#DB502E;
+}
+.categorias li li li a {
+    background:#ED6A4A;
+    z-index:200;
+    border-top:1px solid #EF7A5D;
+}
+.c-title {
+	font-size: 30px;
 }
